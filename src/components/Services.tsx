@@ -1,0 +1,12 @@
+import Offers from "./Offers";
+
+export default function Services() {
+  return (
+    <section className="w-full flex flex-col md:flex-row items-start justify-center bg-white md:px-20 gap-10 ">
+      {/* Columna derecha (70%) */}
+      <div className="w-full md:w-[70%]">
+        <Offers />
+      </div>
+    </section>
+  );
+}
