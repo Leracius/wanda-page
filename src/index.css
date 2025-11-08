@@ -11,8 +11,18 @@
   }
 }
 
+* {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .animate-fade-up {
   animation: fadeUp 0.8s ease-out forwards;
+}
+
+body {
+  background-color: black;
 }
 
 /* :root {

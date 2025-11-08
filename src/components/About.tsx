@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-[#D7D2FC] flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-12 md:py-24 border-0 md:border-10 border-white border-white rounded-3xl overflow-hidden"
+      className="w-full bg-rose-300 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-12 md:py-24 border-0 md:border-10 rounded-3xl overflow-hidden"
     >
       {/* Columna texto */}
       <div className="md:w-[65%] w-full text-center md:text-left mb-10 md:mb-0 md:pr-12">

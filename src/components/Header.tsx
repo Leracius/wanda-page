@@ -4,10 +4,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-[#9A8F88]">
+    <header className="bg-white shadow-md w-full md:sticky top-0 z-50 rounded-2xl mt-2 mb-2">
       <div className="mx-auto flex h-24  justify-between md:px-0  px-4 md:px-0 sm:px-6 lg:px-8">
         {/* Logo */}
-        <img src="/logo.png" alt="Logo" className="h-24 w-24" />
+        <img src="/logo-white.png" alt="Logo" className="h-20 w-28" />
 
         {/* Botón hamburguesa (mobile) */}
         <button

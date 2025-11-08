@@ -2,9 +2,9 @@ import Carousel from "./Carrousel";
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col md:flex-row h-auto md:h-[80vh] mt-2 border-0 md:border-10 border-white rounded-3xl overflow-hidden">
+    <section className="w-full flex flex-col md:flex-row h-auto md:h-[80vh] border-0 md:border-10 rounded-3xl overflow-hidden mb-3">
       {/* Izquierda (60%) */}
-      <div className="md:w-4/6 w-full py-16 px-8 md:p-64 flex items-center justify-center bg-violet-100">
+      <div className="md:w-4/6 w-full py-16 px-8 md:p-64 flex items-center justify-center bg-orange-300">
         <div className="flex flex-col justify-center items-center text-center p-3 ">
           <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 md:mb-6 leading-tight animate-fade-up">
             El cambio empieza hoy

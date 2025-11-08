@@ -11,7 +11,7 @@ export default function Offers() {
   return (
     <section
       id="services"
-      className="w-full bg-violet-200 py-16 px-6 md:px-20 text-white border-0 md:border-10 border-white rounded-3xl bg-[url('/pesas.jpg')] bg-cover bg-center bg-no-repeat"
+      className="w-full py-16 px-6 md:px-20 text-white border-0 md:border-10 border-white rounded-3xl bg-[url('/pesas.jpg')] bg-cover bg-center bg-no-repeat"
     >
       <div className="max-w-6xl mx-auto text-center mb-12 p-3 bg-[rgba(0,0,0,0.5)] rounded-2xl">
         <h2 className="text-4xl md:text-6xl font-extrabold mb-4">Te ofrezco</h2>
@@ -56,7 +56,7 @@ export default function Offers() {
                 podrás registrar tus avances y organizar tus entrenamientos.
               </p>
               <a
-                href="https://wa.me/543513552534"
+                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20asesoría%20personalizada%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
@@ -100,7 +100,7 @@ export default function Offers() {
                 para que puedas mantener el plan en el tiempo.
               </p>
               <a
-                href="https://wa.me/XXXXXXXXXX"
+                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20asesoría%20personalizada%20y%20nutrición"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
