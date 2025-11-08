@@ -5,14 +5,14 @@ export default function Header() {
 
   return (
     <header className="bg-[#9A8F88]">
-      <div className="mx-auto flex h-24 max-w-6xl items-center justify-around px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-24  justify-between md:px-0  px-4 md:px-0 sm:px-6 lg:px-8">
         {/* Logo */}
         <img src="/logo.png" alt="Logo" className="h-24 w-24" />
 
         {/* Botón hamburguesa (mobile) */}
         <button
           onClick={() => setOpen(!open)}
-          className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#524C48] md:hidden"
+          className="inline-flex items-center justify-center p-3 m-3 rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#524C48] md:hidden"
           aria-label="Abrir menú"
         >
           {/* ícono */}
@@ -36,19 +36,18 @@ export default function Header() {
         </button>
 
         {/* Links desktop */}
-        <nav className="hidden space-x-6 md:flex flex items-center rounded-md px-4 py-2 bg-white">
-          <a href="#" className="text-gray-700 hover:text-indigo-600">
-            Inicio
-          </a>
-          <a href="#" className="text-gray-700 hover:text-indigo-600">
+        <nav className="hidden space-x-6 md:flex flex items-center text-xl px-4 py-2">
+          <a href="#services" className="text-gray-700 hover:text-indigo-600">
             Servicios
           </a>
-          <a href="#" className="text-gray-700 hover:text-indigo-600">
+          <a href="#about" className="text-gray-700 hover:text-indigo-600">
             Sobre mí
           </a>
           <a
-            href="#"
-            className="rounded-md bg-[#9A8F88] px-4 py-2 text-white hover:bg-[#524C48]"
+            href="https://wa.me/543513552534?text=Hola%20quiero%20saber%20más%20sobre%20tus%20servicios"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
           >
             Contacto
           </a>
@@ -60,26 +59,22 @@ export default function Header() {
         <div className="bg-white md:hidden">
           <nav className="space-y-1 px-4 py-3">
             <a
-              href="#"
-              className="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100"
-            >
-              Inicio
-            </a>
-            <a
-              href="#"
+              href="#services"
               className="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100"
             >
               Servicios
             </a>
             <a
-              href="#"
+              href="#about"
               className="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100"
             >
               Sobre mí
             </a>
             <a
-              href="#"
-              className="block rounded bg-[#9A8F88] px-2 py-2 text-white hover:bg-[#524C48]"
+              href="https://wa.me/543513552534?text=Hola%20quiero%20saber%20más%20sobre%20tus%20servicios"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
             >
               Contacto
             </a>
