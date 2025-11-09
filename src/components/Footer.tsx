@@ -2,7 +2,7 @@ import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-6 px-8 flex flex-col md:flex-row items-center justify-between">
+    <footer className="w-full bg-black text-white py-6 px-8 mt-10 flex flex-col md:flex-row items-center justify-between">
       {/* Texto o marca */}
       <p className="text-sm md:text-base text-gray-400">
         © {new Date().getFullYear()} Wanda Janikow. Todos los derechos

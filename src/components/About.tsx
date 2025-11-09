@@ -6,10 +6,10 @@ export default function About() {
     >
       {/* Columna texto */}
       <div className="md:w-[65%] w-full text-center md:text-left mb-10 md:mb-0 md:pr-12">
-        <h2 className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900">
+        <h2 className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900 ">
           Sobre mí
         </h2>
-        <p className="text-lg md:text-2xl leading-relaxed text-gray-800 max-w-3xl mx-auto md:mx-0">
+        <p className="text-lg md:text-2xl leading-relaxed text-gray-800 max-w-3xl mx-auto md:mx-0 ">
           Soy Wanda Janikow, Profesora de Educación Física y Personal trainer.
           El movimiento siempre fue parte de mí, con los años supe que no solo
           era una pasión, sino mi vocación. Para eso decidí formarme, ampliar

@@ -4,10 +4,26 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md w-full md:sticky top-0 z-50 rounded-2xl mt-2 mb-2">
-      <div className="mx-auto flex h-24  justify-between md:px-0  px-4 md:px-0 sm:px-6 lg:px-8">
+    <header className=" shadow-md bg-indigo-300 w-full md:sticky top-0 z-50 rounded-2xl mt-2 mb-2 md:mb-0">
+      <a
+        href="https://wa.me/543513552534?text=Hola%20Wanda%20😊"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/WhatsApp_icon.png"
+          className="h-20 w-20 fixed bottom-4 right-4 z-10"
+          alt=""
+        />
+      </a>
+
+      <div className="mx-auto flex h-24 justify-between md:px-0 items-center  px-4 md:px-0 sm:px-6 lg:px-8">
         {/* Logo */}
-        <img src="/logo-white.png" alt="Logo" className="h-20 w-28" />
+        <img
+          src="/logo-white.png"
+          alt="Logo"
+          className="h-20 w-20 rounded-full"
+        />
 
         {/* Botón hamburguesa (mobile) */}
         <button
@@ -47,7 +63,7 @@ export default function Header() {
             href="https://wa.me/543513552534?text=Hola%20quiero%20saber%20más%20sobre%20tus%20servicios"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
+            className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
           >
             Contacto
           </a>
@@ -56,8 +72,8 @@ export default function Header() {
 
       {/* Menú mobile */}
       {open && (
-        <div className="bg-white md:hidden">
-          <nav className="space-y-1 px-4 py-3">
+        <div className="bg-white md:hidden rounded-b-2xl ">
+          <nav className="space-y-1 px-4 py-3 ">
             <a
               href="#services"
               className="block rounded px-2 py-2 text-gray-700 hover:bg-gray-100"
@@ -74,7 +90,7 @@ export default function Header() {
               href="https://wa.me/543513552534?text=Hola%20quiero%20saber%20más%20sobre%20tus%20servicios"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
+              className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
             >
               Contacto
             </a>

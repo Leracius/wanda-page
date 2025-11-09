@@ -59,7 +59,7 @@ export default function Offers() {
                 href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20asesoría%20personalizada%20"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
+                className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
               >
                 Ir al chat de WhatsApp
               </a>
@@ -103,7 +103,7 @@ export default function Offers() {
                 href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20asesoría%20personalizada%20y%20nutrición"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#9A8F88] hover:bg-[#524C48] text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
+                className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
               >
                 Quiero este plan
               </a>
