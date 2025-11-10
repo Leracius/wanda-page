@@ -11,7 +11,7 @@ export default function Offers() {
   return (
     <section
       id="services"
-      className="w-full py-16 px-6 md:px-20 text-white border-white rounded-3xl bg-[url('/pesas.jpg')] bg-cover bg-center bg-no-repeat"
+      className="w-full py-16 px-6 md:px-20 text-white border-white rounded-3xl bg-[url('/pesas.jpg')] bg-cover bg-center bg-no-repeat shadow-xl"
     >
       <div className="max-w-6xl mx-auto text-center mb-12 p-3 bg-[rgba(0,0,0,0.5)] rounded-2xl">
         <h2 className="text-4xl md:text-6xl font-extrabold mb-4">Te ofrezco</h2>
