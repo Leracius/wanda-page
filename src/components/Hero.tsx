@@ -2,7 +2,7 @@ import Carousel from "./Carrousel";
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col md:flex-row h-auto md:h-[80vh] border-0 md:border-10 rounded-3xl overflow-hidden mb-3">
+    <section className="w-full flex flex-col md:flex-row h-auto md:h-[80vh]  rounded-3xl mb-3 shadow-xl overflow-hidden">
       {/* Izquierda (60%) */}
       <div className="md:w-4/6 w-full py-12 md:py-16 px-0 md:px-4 md:p-64 flex items-center justify-center bg-gray-300">
         <div className="flex flex-col justify-center items-center text-center p-3x">

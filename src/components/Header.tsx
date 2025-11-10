@@ -4,7 +4,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className=" shadow-md bg-indigo-300 w-full md:sticky top-0 z-50 rounded-2xl mt-2 mb-2 md:mb-0">
+    <header className=" shadow-md bg-indigo-300 w-full md:sticky top-0 z-50 md:rounded-none rounded-2xl mt-2 md:mt-0 mb-2 md:mb-0">
       <a
         href="https://wa.me/543513552534?text=Hola%20Wanda%20😊"
         target="_blank"
