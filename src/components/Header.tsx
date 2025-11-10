@@ -12,7 +12,7 @@ export default function Header() {
       >
         <img
           src="/WhatsApp_icon.png"
-          className="h-20 w-20 fixed bottom-4 right-4 z-10"
+          className="h-20 w-20 fixed bottom-16 right-4 z-10"
           alt=""
         />
       </a>

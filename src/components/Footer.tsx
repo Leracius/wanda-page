@@ -11,7 +11,7 @@ export default function Footer() {
 
       {/* Ícono Instagram */}
       <a
-        href="https://www.instagram.com/tu_usuario_aqui"
+        href="https://www.instagram.com/wandajani"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 md:mt-0 flex items-center gap-2 hover:text-pink-500 transition-colors duration-300"
