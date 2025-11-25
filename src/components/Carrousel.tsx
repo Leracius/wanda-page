@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 const images = [
-  "/hero-img-1.jpeg",
-  "/hero-img-2.jpeg",
-  "/hero-img-3.jpeg",
-  "/hero-img-4.jpeg",
+  "/hero-img-1.webp",
+  "/hero-img-2.webp",
+  "/hero-img-3.webp",
+  "/hero-img-4.webp",
 ];
 
 export default function Carousel() {

@@ -1,4 +1,5 @@
 import About from "./components/About";
+import { Asesoria } from "./components/Asesoria";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Asesoria imageSrc="/asesoria-wanda.webp" />
       <Footer />
     </>
   );

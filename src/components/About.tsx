@@ -29,7 +29,7 @@ export default function About() {
       {/* Columna imagen */}
       <div className="md:w-[35%] w-full flex justify-center md:justify-end">
         <img
-          src="/about-img.jpeg"
+          src="/about-img.webp"
           alt="Wanda Janikow"
           className="w-64 h-64 md:w-[380px] md:h-[380px] object-cover rounded-2xl shadow-lg border-10 border-white"
         />
