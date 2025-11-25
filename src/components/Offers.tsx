@@ -2,9 +2,11 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 export default function Offers() {
-  const [open, setOpen] = useState<null | "personal" | "nutricion">(null);
+  const [open, setOpen] = useState<null | "personal" | "nutricion" | "basic">(
+    null
+  );
 
-  const toggle = (card: "personal" | "nutricion") => {
+  const toggle = (card: "personal" | "nutricion" | "basic") => {
     setOpen((prev) => (prev === card ? null : card));
   };
 
@@ -21,7 +23,48 @@ export default function Offers() {
       </div>
 
       <div className="grid gap-8 md:grid-cols-1 justify-items-center">
-        {/* 1) Asesoría personalizada */}
+        {/* 1) asesoria BASIC */}
+        <div
+          className={`w-full md:w-[46rem] bg-white rounded-2xl shadow-lg p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+            open === "basic" ? "ring-4 ring-indigo-300" : ""
+          }`}
+          onClick={() => toggle("basic")}
+        >
+          <div className="flex justify-between items-center gap-4">
+            <h3 className="text-2xl font-bold text-black">
+              Asesoría <strong className="text-indigo-500">BASIC</strong>
+            </h3>
+            <ChevronDown
+              className={`h-6 w-6 text-indigo-600 transform transition-transform duration-300 ${
+                open === "basic" ? "rotate-180" : ""
+              }`}
+            />
+          </div>
+
+          {open === "basic" && (
+            <div className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed">
+              <p className="mb-"></p>
+              <p className="mb-4">
+                Accederás a tu rutina 100% personalizada adaptada a tu estilo de
+                vida, objetivos, y tiempos. Comunicación directa conmigo,
+                seguimiento constante y corrección de técnicas. La motivación
+                será clase para mantener y progresar en tu entrenamiento.{" "}
+                <strong>¡VAMOS, por tu mejor versión!</strong>
+              </p>
+
+              <a
+                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20el%20plan%20asesoría%20basic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
+              >
+                Quiero este plan
+              </a>
+            </div>
+          )}
+        </div>
+
+        {/* 2) Asesoría PLUS */}
         <div
           className={`w-full md:w-[46rem] bg-white rounded-2xl shadow-lg p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
             open === "personal" ? "ring-4 ring-indigo-300" : ""
@@ -30,7 +73,7 @@ export default function Offers() {
         >
           <div className="flex justify-between items-center gap-4">
             <h3 className="text-2xl font-bold text-black">
-              Asesoría personalizada
+              Asesoría <strong className="text-indigo-500">PLUS</strong>{" "}
             </h3>
             <ChevronDown
               className={`h-6 w-6 text-indigo-600 transform transition-transform duration-300 ${
@@ -42,21 +85,23 @@ export default function Offers() {
           {open === "personal" && (
             <div className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed">
               <p className="mb-4">
-                Accederás a tu rutina <strong>100% personalizada</strong>,
-                adaptada a tu estilo de vida, objetivos y tiempos.
+                Accederás a tu <strong>rutina 100% personalizada </strong>{" "}
+                adaptada a tu estilo de vida, objetivos, y tiempos. Accederás a
+                tu plan y en el tendrás links que te llevaran a videos donde
+                podrás ver cada ejercicio, registrar tus avances y organizar tus
+                entrenamientos. Cuenta con
+                <strong>
+                  GUIA DE ALIMENTACION con +100 recetas e ideas
+                </strong>{" "}
+                una para complementar tu entrenamiento con una nutrición
+                consciente y saludable. Creada y pensada con mucha dedicación
+                por una Lic. En Nutrición matriculada. Tendrás seguimiento
+                constante y la motivación que será clase para mantener y
+                progresar en tu entrenamiento. ¡VAMOS, por tu mejor versión!
               </p>
-              <p className="mb-4">
-                A través del link a continuación, irás a un{" "}
-                <strong>chat de WhatsApp directamente conmigo</strong> donde
-                pactaremos una videollamada o chat de consulta. Ahí nos
-                conoceremos y definiremos las metas para tu plan ideal.
-              </p>
-              <p className="mb-6">
-                Tendrás links a <strong>videos de cada ejercicio</strong>,
-                podrás registrar tus avances y organizar tus entrenamientos.
-              </p>
+
               <a
-                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20asesoría%20personalizada%20"
+                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20el%20plan%20asesoría%20plus%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
@@ -67,7 +112,7 @@ export default function Offers() {
           )}
         </div>
 
-        {/* 2) Asesoría personalizada y nutrición */}
+        {/* 3) Asesoría personalizada y nutrición */}
         <div
           className={`w-full md:w-[46rem] bg-white rounded-2xl shadow-lg p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
             open === "nutricion" ? "ring-4 ring-indigo-300" : ""
@@ -76,7 +121,10 @@ export default function Offers() {
         >
           <div className="flex justify-between items-center gap-4">
             <h3 className="text-2xl font-bold text-black">
-              Asesoría personalizada y nutrición
+              Asesoría{" "}
+              <strong className="text-indigo-500">
+                personalizada y nutrición
+              </strong>
             </h3>
             <ChevronDown
               className={`h-6 w-6 text-indigo-600 transform transition-transform duration-300 ${
