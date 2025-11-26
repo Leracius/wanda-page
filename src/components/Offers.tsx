@@ -23,7 +23,7 @@ export default function Offers() {
       </div>
 
       <div className="grid gap-8 md:grid-cols-1 justify-items-center">
-        {/* 1) asesoria BASIC */}
+        {/* 1) asesoria ESENCIAL */}
         <div
           className={`w-full md:w-[46rem] bg-white rounded-2xl shadow-lg p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl ${
             open === "basic" ? "ring-4 ring-indigo-300" : ""
@@ -32,7 +32,7 @@ export default function Offers() {
         >
           <div className="flex justify-between items-center gap-4">
             <h3 className="text-2xl font-bold text-black">
-              Asesoría <strong className="text-indigo-500">BASIC</strong>
+              Asesoría <strong className="text-indigo-500">ESENCIAL</strong>
             </h3>
             <ChevronDown
               className={`h-6 w-6 text-indigo-600 transform transition-transform duration-300 ${
@@ -43,13 +43,34 @@ export default function Offers() {
 
           {open === "basic" && (
             <div className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed">
-              <p className="mb-"></p>
-              <p className="mb-4">
-                Accederás a tu rutina 100% personalizada adaptada a tu estilo de
-                vida, objetivos, y tiempos. Comunicación directa conmigo,
-                seguimiento constante y corrección de técnicas. La motivación
-                será clase para mantener y progresar en tu entrenamiento.{" "}
-                <strong>¡VAMOS, por tu mejor versión!</strong>
+              <p className="mb-4 leading-relaxed">
+                ✔️ <strong>¿Qué incluye tu plan?</strong>
+                <br />
+                <br />
+                💪 <strong>Rutina 100% personalizada: </strong> creada
+                especialmente para tu estilo de vida, tus objetivos y tu nivel.
+                Nada genérico: todo pensado para vos.
+                <br />
+                <br />
+                📲 <strong>Acceso a tu plan completo:</strong> con enlaces a
+                videos de cada ejercicio, espacio para registrar tus avances y
+                una organización semanal intuitiva para que entrenes con
+                claridad.
+                <br />
+                <br />
+                📱 <strong>Acceso al plan desde la App:</strong> podrás ver tu
+                plan completo, registrar tu progreso, revisar los ejercicios y
+                seguir tu entrenamiento desde cualquier lugar.
+                <br />
+                <br />
+                💬 <strong>Comunicación directa conmigo:</strong> para resolver
+                dudas, ajustar cargas, modificar ejercicios y acompañarte paso a
+                paso.
+                <br />
+                <br />
+                🎯 <strong>Seguimiento constante:</strong> corrección de
+                técnica, análisis de progreso y ajustes estratégicos para
+                maximizar tus resultados.
               </p>
 
               <a
@@ -84,20 +105,39 @@ export default function Offers() {
 
           {open === "personal" && (
             <div className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed">
-              <p className="mb-4">
-                Accederás a tu <strong>rutina 100% personalizada </strong>{" "}
-                adaptada a tu estilo de vida, objetivos, y tiempos. Accederás a
-                tu plan y en el tendrás links que te llevaran a videos donde
-                podrás ver cada ejercicio, registrar tus avances y organizar tus
-                entrenamientos. Cuenta con
-                <strong>
-                  GUIA DE ALIMENTACION con +100 recetas e ideas
-                </strong>{" "}
-                una para complementar tu entrenamiento con una nutrición
-                consciente y saludable. Creada y pensada con mucha dedicación
-                por una Lic. En Nutrición matriculada. Tendrás seguimiento
-                constante y la motivación que será clase para mantener y
-                progresar en tu entrenamiento. ¡VAMOS, por tu mejor versión!
+              <p className="mb-4 leading-relaxed">
+                ✔️ <strong>¿Qué incluye tu plan personalizado?</strong>
+                <br />
+                <br />
+                💪 <strong>Rutina 100% personalizada:</strong> diseñada
+                específicamente para tu estilo de vida, tus objetivos y tu nivel
+                actual. Sin plantillas genéricas.
+                <br />
+                <br />
+                📲 <strong>Acceso a tu plan completo:</strong> con videos
+                explicativos de cada ejercicio, espacio para registrar tus
+                avances y organizar tus entrenamientos semana a semana.
+                <br />
+                <br />
+                📱 <strong>Acceso al plan desde la App:</strong> podrás ver tu
+                plan completo, registrar tu progreso, revisar los ejercicios y
+                seguir tu entrenamiento desde cualquier lugar.
+                <br />
+                <br />
+                💬 <strong>Comunicación directa conmigo:</strong> para resolver
+                dudas, ajustar tu progreso y acompañarte en cada paso del
+                proceso.
+                <br />
+                <br />
+                🎯 <strong>Seguimiento continuo:</strong> corrección de técnica,
+                ajustes estratégicos y feedback personalizado para mejorar tus
+                resultados.
+                <br />
+                <br />
+                🥗 <strong>Guía de alimentación completa:</strong> más de 100
+                recetas e ideas saludables, creada por una Licenciada en
+                Nutrición matriculada, para que tu entrenamiento esté respaldado
+                por una nutrición consciente y sostenible.
               </p>
 
               <a
