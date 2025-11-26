@@ -74,7 +74,7 @@ export default function Offers() {
               </p>
 
               <a
-                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20el%20plan%20asesoría%20basic"
+                href="https://wa.me/543513552534?text=Hola%20me%20gustaria%20el%20plan%20asesoría%20esencial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-indigo-400 hover:bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full transition-transform duration-300 hover:scale-105"
